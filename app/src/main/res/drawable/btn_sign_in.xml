@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="@color/btn_splash"
+    >
+
+    <item>
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/btn_sign_in" />
+            <stroke
+                android:width="3dp"
+                android:color="@color/btn_sign_in_stroke" />
+            <corners android:radius="60dp"> </corners>
+        </shape>
+    </item>
+</ripple>

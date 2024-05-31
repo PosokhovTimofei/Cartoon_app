@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "452706911335",
+    "project_id": "cartoon-2b608",
+    "storage_bucket": "cartoon-2b608.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452706911335:android:dffd71112809306602c0c2",
+        "android_client_info": {
+          "package_name": "com.example.cartoon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn1Q3Vk8kdyrEFEM-4JbXlztgngJbUj6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cartoon</string>
+    <string name="text_bottom">Войдите в свой аккаунт или зарегестрируйтесь</string>
+    <string name="btnSignIn">Войти</string>
+    <string name="btnRegister">Регистрация</string>
+    <string name="register">Register</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+</resources>

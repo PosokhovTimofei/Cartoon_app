@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_bottom">#c7c7c7</color>
+    <color name="btn_sign_in">#473a3c</color>
+    <color name="btn_sign_in_stroke">#141414</color>
+    <color name="btn_splash">#372929</color>
+    <color name="light_brown">#D2B48C</color>
+    </resources>
