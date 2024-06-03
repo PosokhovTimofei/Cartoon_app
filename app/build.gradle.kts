@@ -42,6 +42,8 @@ dependencies {
     annotationProcessor("androidx.room:room-compiler:2.6.1")
     // Picasso
     implementation("com.squareup.picasso:picasso:2.71828")
+    implementation ("androidx.fragment:fragment-ktx:1.3.0")
+
 
 
     implementation("androidx.appcompat:appcompat:1.7.0")

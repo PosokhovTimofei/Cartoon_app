@@ -10,12 +10,11 @@
         android:name="com.example.cartoon.EmailPasswordFragment"
         android:label="EmailPasswordFragment" >
         <action
-            android:id="@+id/action_emailPasswordFragment_to_listFragment"
-            app:destination="@id/listFragment" />
+            android:id="@+id/action_emailPasswordFragment_to_cartoonListFragment"
+            app:destination="@id/cartoonListFragment" />
     </fragment>
     <fragment
-        android:id="@+id/listFragment"
-        android:name="com.example.cartoon.ListFragment"
-        android:label="fragment_list"
-        tools:layout="@layout/fragment_list" />
+        android:id="@+id/cartoonListFragment"
+        android:name="com.example.cartoon.CartoonListFragment"
+        android:label="CartoonListFragment" />
 </navigation>

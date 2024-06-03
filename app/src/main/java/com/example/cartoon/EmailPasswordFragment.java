@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import com.example.cartoon.databinding.FragmentEmailPasswordBinding;
 import com.google.firebase.auth.FirebaseAuth;
@@ -62,7 +63,8 @@ public class EmailPasswordFragment extends Fragment {
         // Проверяем если пользователь авторизаован, то обновляем UI
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if(currentUser != null){
-            reload();
+            //reload();
+            Navigation.findNavController(requireView()).navigate(R.id.action_emailPasswordFragment_to_cartoonListFragment);
         }
     }
     // Создание нового пользователя
@@ -100,6 +102,9 @@ public class EmailPasswordFragment extends Fragment {
                         Log.d(TAG, "signInWithEmail:success");
                         FirebaseUser user = mAuth.getCurrentUser();
                         updateUI(user);
+
+
+                        Navigation.findNavController(requireView()).navigate(R.id.action_emailPasswordFragment_to_cartoonListFragment);
                     } else {
                         // Авторизация прошла с ошибкой. Показываем ее в Toast.
                         Log.w(TAG, "signInWithEmail:failure", task.getException());
@@ -117,7 +122,6 @@ public class EmailPasswordFragment extends Fragment {
     // Метод для отправки подтверждающего письма для входа. Необходима доп.настройка в Firebase.
     private void sendEmailVerification() {
         mBinding.verifyEmailButton.setEnabled(false);
-        // Отправка подтверждающего письма
         final FirebaseUser user = mAuth.getCurrentUser();
         assert user != null;
         user.sendEmailVerification()
@@ -127,6 +131,8 @@ public class EmailPasswordFragment extends Fragment {
                         Toast.makeText(getContext(),
                                 "Verification email sent to " + user.getEmail(),
                                 Toast.LENGTH_SHORT).show();
+                        // Переключение на новый фрагмент
+//                        showCartoonListFragment();
                     } else {
                         Log.e(TAG, "sendEmailVerification", task.getException());
                         Toast.makeText(getContext(),
@@ -135,6 +141,16 @@ public class EmailPasswordFragment extends Fragment {
                     }
                 });
     }
+//    private void showCartoonListFragment() {
+//        Fragment cartoonListFragment = new CartoonListFragment();
+//        requireActivity().getSupportFragmentManager().beginTransaction()
+//                .replace(R.id.activity_main, cartoonListFragment)
+//
+//
+//                .addToBackStack(null)
+//                .commit();
+//    }
+
 
     private void signOut() {
         mAuth.signOut();
