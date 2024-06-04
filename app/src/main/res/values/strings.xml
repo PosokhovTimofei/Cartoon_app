@@ -50,4 +50,5 @@
     <string name="emailpassword_title_text">Email and Password</string>
     <string name="reload">Reload</string>
     <string name="firebase_status_fmt">Firebase UID: %s</string>
+    <string name="_3_main_characters">3 main characters:</string>
 </resources>

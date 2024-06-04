@@ -13,7 +13,7 @@ public class CartoonListFragmentViewModel extends AndroidViewModel{
 
     public CartoonListFragmentViewModel(Application application) {
         super(application);
-        rep = new CartoonRepositoriy(getApplication());
+        rep = new CartoonRepositoriy(application);
         list = rep.getList();
     }
     public LiveData<List<Cartoon>> getCartoons(){

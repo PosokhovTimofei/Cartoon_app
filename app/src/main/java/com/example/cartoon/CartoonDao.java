@@ -8,12 +8,7 @@ import java.util.List;
 
 @Dao
 public interface CartoonDao {
-    @Query("SELECT * FROM cartoon")
+    @Query("SELECT * FROM cartoons")
     LiveData<List<Cartoon>> getAllCartoons();
-
-//    @Query("SELECT * FROM cartoon WHERE id = :id")
-//    Cartoon getCartoonById(int id);
-
-
 }
 

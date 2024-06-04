@@ -15,7 +15,7 @@ public abstract class CartoonDatabase extends RoomDatabase {
     public static synchronized CartoonDatabase getInstance(Context context) {
         if (instance == null) {
             instance = Room.databaseBuilder(context.getApplicationContext(),
-                            CartoonDatabase.class, "cartoon.db")
+                            CartoonDatabase.class, "cartoonnn.db")
                     .createFromAsset("databases/cartoon.db")
                     .build();
         }
